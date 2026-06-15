@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Khalif ARBA | Premium Fragrances</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+    
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="navbar-container">
+        <div class="logo">
+          <span class="khalif">khalif</span>
+          <span class="arba">ARBA</span>
+        </div>
+        <div class="hamburger" id="hamburger-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="nav-links">
+          <li class="nav-search">
+            <input type="text" id="product-search" class="nav-search-input" placeholder="Search Oud, Rose..." />
+          </li>
+          <li><a href="#collections">Collections</a></li>
+          <li><a href="#about">Heritage</a></li>
+          <li><a href="#" id="nav-login-btn">Login / Sign Up</a></li>
+          <li><button id="theme-toggle" class="theme-toggle" aria-label="Toggle Theme">🌓</button></li>
+          <li>
+            <a href="#" class="cart-icon" aria-label="Shopping Cart">
+              🛒<span class="cart-badge" id="cart-badge">0</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" style="height: 80vh; background-color: #000;">
+      <div class="hero-background animate-fade-in" style="opacity: 1;">
+        <img src="images/hero-bg.jpg" alt="Khalif Arba Premium" onerror="this.src='images/p1.jpg'" style="object-fit: cover; object-position: center;" />
+      </div>
+      <div class="hero-content" style="display: flex; height: 100%; align-items: flex-end; justify-content: flex-end; padding-bottom: 3rem; padding-right: 5%;">
+      </div>
+    </section>
+
+    <!-- Heritage / About Section -->
+    <section class="about" id="about">
+      <div class="about-container animate-fade-in">
+        <h2 class="section-title">The Art of Perfumery</h2>
+        <p class="about-text">
+          At <strong>Khalif ARBA</strong>, every drop of our exquisite perfume is a masterpiece. We carefully blend the ancient traditions of authentic Arabic <strong>Itr (Attar)</strong> with modern, sophisticated notes to create luxurious fragrances that linger in the memory.
+        </p>
+      </div>
+    </section>
+
+    <!-- Product Showcase -->
+    <section class="showcase" id="collections">
+      <div class="showcase-header animate-fade-in">
+        <h2 class="section-title">Signature Collections</h2>
+        <p class="section-subtitle">Find your perfect scent</p>
+      </div>
+      <div class="product-grid" id="product-grid">
+        <!-- Products injected via JS -->
+      </div>
+    </section>
+
+    <!-- Inquiry / Newsletter -->
+    <section class="inquiry" id="contact">
+      <div class="inquiry-container animate-fade-in">
+        <h2 class="section-title">Stay Updated</h2>
+        <p class="about-text">Join our mailing list to receive updates on new arrivals and exclusive offers.</p>
+        <form class="inquiry-form" onsubmit="event.preventDefault(); alert('Subscribed Successfully!');">
+          <div class="form-group">
+            <input type="text" placeholder="Your Name" required />
+          </div>
+          <div class="form-group">
+            <input type="email" placeholder="Your Email Address" required />
+          </div>
+          <button type="submit" class="btn-primary form-submit">SUBSCRIBE</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-brand">
+          <div class="logo">
+            <span class="khalif">khalif</span>
+            <span class="arba" style="color: #fff;">ARBA</span>
+          </div>
+          <p class="footer-tagline" style="margin-top: 1rem; font-size: 0.9rem; color: #ccc;">
+            The Ultimate Destination for Luxury Perfumes and Premium Itrs.
+          </p>
+        </div>
+        
+        <div class="footer-contact" style="color: #ccc; font-size: 0.9rem; line-height: 1.6;">
+          <h3 style="color: #fff; font-family: 'Inter', sans-serif; font-size: 1.1rem; margin-bottom: 10px;">Contact Us</h3>
+          <p>📍 Location: Annu Chaurhah</p>
+          <p>📞 Phone: 9198900313</p>
+        </div>
+
+        <div class="footer-policy" style="color: #ccc; font-size: 0.9rem; line-height: 1.6;">
+          <h3 style="color: #fff; font-family: 'Inter', sans-serif; font-size: 1.1rem; margin-bottom: 10px;">Our Policy</h3>
+          <p>⭐ 100% Authentic Products</p>
+          <p>🔄 5 Days Exchange Policy</p>
+        </div>
+      </div>
+      <div class="footer-bottom" style="text-align: center; padding-top: 20px; margin-top: 20px; border-top: 1px solid rgba(255,255,255,0.1); color: #888; font-size: 0.8rem;">
+        &copy; 2026 Khalif ARBA. All Rights Reserved.
+      </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/919876543210?text=Hello%20Khalif%20ARBA,%20I%20am%20interested%20in%20your%20perfumes." 
+       class="whatsapp-float" 
+       target="_blank"
+       aria-label="Chat with us on WhatsApp">
+      <svg class="whatsapp-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path d="M12.031 0C5.385 0 0 5.385 0 12.031c0 2.12.553 4.184 1.602 6.002L.15 23.361l5.518-1.446c1.761.966 3.766 1.478 5.815 1.478h.004c6.645 0 12.031-5.384 12.031-12.031S18.675 0 12.031 0zm.004 21.439h-.002c-1.802 0-3.568-.485-5.114-1.402l-.367-.217-3.8.995.996-3.706-.238-.378c-1.008-1.606-1.542-3.468-1.542-5.394 0-5.568 4.53-10.098 10.098-10.098 5.567 0 10.098 4.53 10.098 10.098S17.598 21.439 12.035 21.439zM17.583 14.4c-.305-.152-1.803-.89-2.083-.99-.279-.101-.483-.152-.686.152-.204.304-.788.99-.966 1.192-.178.203-.356.228-.661.076-1.59-.785-2.612-1.392-3.633-2.914-.265-.395.26-.376.84-.96.077-.076.115-.152.153-.254.038-.101.019-.19-.019-.266-.038-.076-.686-1.654-.94-2.264-.247-.591-.498-.511-.686-.52-.178-.008-.382-.008-.585-.008-.204 0-.535.076-.814.381-.28.305-1.069 1.042-1.069 2.54 0 1.498 1.094 2.946 1.247 3.149.153.203 2.146 3.277 5.197 4.593.726.313 1.293.499 1.737.639.73.231 1.395.198 1.916.12.583-.087 1.803-.736 2.057-1.446.254-.71.254-1.318.178-1.446-.076-.127-.28-.203-.585-.356z"/>
+      </svg>
+    </a>
+
+    <!-- Cart Sidebar -->
+    <div id="cart-sidebar" class="cart-sidebar">
+      <div class="cart-header">
+        <h2>Your Cart</h2>
+        <span class="close-cart" id="close-cart">&times;</span>
+      </div>
+      <div class="cart-items-container" id="cart-items-container">
+        <!-- Cart items will be injected here via JS -->
+      </div>
+      <div class="cart-footer">
+        <div class="cart-total">
+          <span>Total:</span>
+          <span id="cart-total-price">₹0</span>
+        </div>
+        <button class="btn-primary checkout-btn" id="checkout-btn">BOOK NOW</button>
+      </div>
+    </div>
+
+    <!-- Login/Signup Modal -->
+    <div id="login-modal" class="modal-overlay">
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <h2 class="modal-title">Welcome Back</h2>
+        <p class="modal-subtitle">Log in or Sign up to access exclusive offers.</p>
+        <form class="modal-form" onsubmit="event.preventDefault(); alert('Login Successful!'); document.getElementById('login-modal').style.display='none';">
+          <input type="email" placeholder="Email Address" required />
+          <input type="password" placeholder="Password" required />
+          <button type="submit" class="btn-primary" style="width: 100%;">LOGIN / SIGN UP</button>
+        </form>
+        <p class="modal-footer">By continuing, you agree to our Terms & Conditions.</p>
+      </div>
+    </div>
+
+    <!-- Toast Notifications Container -->
+    <div id="toast-container" class="toast-container"></div>
+
+    <!-- Checkout Modal -->
+    <div class="modal-overlay" id="checkout-modal">
+      <div class="modal-content checkout-modal-content">
+        <span class="close-modal" id="close-checkout">&times;</span>
+        <h2>Secure Checkout</h2>
+        <form id="checkout-form">
+          
+          <h3 class="checkout-section-title">1. Shipping Address</h3>
+          <div class="form-group">
+            <label>Full Name</label>
+            <input type="text" id="chk-name" required placeholder="John Doe">
+          </div>
+          <div class="form-group">
+            <label>Mobile Number</label>
+            <input type="tel" id="chk-phone" required placeholder="9876543210">
+          </div>
+          <div class="form-group">
+            <label>Delivery Address</label>
+            <textarea id="chk-address" required placeholder="House No, Street Name" rows="2"></textarea>
+          </div>
+          <div class="form-row">
+            <div class="form-group half">
+              <label>City</label>
+              <input type="text" id="chk-city" required placeholder="Mumbai">
+            </div>
+            <div class="form-group half">
+              <label>Pincode</label>
+              <input type="text" id="chk-pin" required placeholder="400001">
+            </div>
+          </div>
+
+          <h3 class="checkout-section-title">2. Payment Method</h3>
+          <div class="payment-options">
+            <label class="payment-option">
+              <input type="radio" name="payment" value="COD" checked>
+              <span>Cash on Delivery (COD)</span>
+            </label>
+            <label class="payment-option">
+              <input type="radio" name="payment" value="Online">
+              <span>Online Payment (UPI / Card)</span>
+            </label>
+          </div>
+
+          <div class="checkout-total">
+            Total to Pay: <span id="checkout-total-price">₹0</span>
+          </div>
+
+          <button type="submit" class="auth-submit" id="final-place-order-btn">Place Order</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
